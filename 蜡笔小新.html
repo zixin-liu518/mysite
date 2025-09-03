@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>野原新之助的个人主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ffcc00;
+            --secondary: #d40000;
+            --light: #fff9e6;
+        }
+        body {
+            font-family: 'Comic Neue', cursive;
+            background-color: var(--light);
+        }
+        header {
+            background-color: var(--primary);
+            color: var(--secondary);
+            padding: 2rem 0;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border: 5px solid white;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .profile-img:hover {
+            transform: scale(1.1);
+        }
+        .section-title {
+            color: var(--secondary);
+            border-bottom: 3px solid var(--primary);
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        .card {
+            border: none;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: var(--primary);
+            color: var(--secondary);
+            padding: 1rem 0;
+        }
+        .btn-custom {
+            background-color: var(--secondary);
+            color: white;
+            border: none;
+            transition: background-color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #a00000;
+            color: white;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+            border-left: 3px solid var(--primary);
+        }
+        .timeline-item {
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -39px;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: var(--secondary);
+            border: 3px solid white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="text-center">
+        <div class="container">
+                        <h1 class="mt-3 fw-bold">野原新之助 <small>(しんのすけ)</small></h1>
+            <p class="lead">今年5岁！就读于双叶幼稚园的向日葵班！</p>
+            <p><i class="fas fa-map-marker-alt"></i> 埼玉县春日部市</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">关于我</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#family">我的家人</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#friends">我的小伙伴</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#hobbies">兴趣爱好</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">精彩瞬间</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">联系我</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        
+        <!-- About Me Section -->
+        <section id="about" class="mb-5">
+            <h2 class="section-title"><i class="fas fa-user-circle"></i> 关于我</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="fs-5">大家好！我是野原新之助，今年5岁，就读于双叶幼稚园向日葵班！我最喜欢动感超人和大姐姐了！嘿嘿，虽然有时候会被妈妈骂，但大家都说我超级可爱！</p>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><strong>生日：</strong> 5月5日</li>
+                        <li class="list-group-item"><strong>星座：</strong> 金牛座</li>
+                        <li class="list-group-item"><strong>血型：</strong> B型</li>
+                        <li class="list-group-item"><strong>身高：</strong> 105.9厘米</li>
+                        <li class="list-group-item"><strong>体重：</strong> 22.8公斤</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+<img src="蜡笔小新.jpg" alt="蜡笔小新" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <!-- Family Section -->
+        <!-- Family Section -->
+<section id="family" class="mb-5">
+    <h2 class="section-title"><i class="fas fa-home"></i> 我的家人</h2>
+    <div class="row g-4">
+        <!-- 爸爸 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <img src="广志.jpg" alt="野原广志">
+                <div class="card-body text-center">
+                    <h5 class="card-title">野原广志</h5>
+                    <p class="card-text">我的爸爸，35岁，在东京的上班族，经常出差，脚很臭！</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 妈妈 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <img src="美伢.jpg" class="card-img-top" alt="野原美冴">
+                <div class="card-body text-center">
+                    <h5 class="card-title">野原美冴</h5>
+                    <p class="card-text">我的妈妈，29岁，全职主妇，生气的时候超可怕！</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 妹妹 · 小葵（野原向日葵） -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <img src="小葵.jpg" alt="野原向日葵">
+                <div class="card-body text-center">
+                    <h5 class="card-title">野原向日葵（小葵）</h5>
+                    <p class="card-text">我的妹妹，小名「小葵」，现在1岁！喜欢帅哥、珠宝传单～</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 小白 -->
+        <div class="col-md-3 col-sm-6">
+            <div class="card">
+                <img src="小白.jpg" alt="小白">
+                <div class="card-body text-center">
+                    <h5 class="card-title">小白</h5>
+                    <p class="card-text">我们家的狗狗，非常聪明，会表演各种特技！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- Friends Section -->
+        <section id="friends" class="mb-5">
+            <h2 class="section-title"><i class="fas fa-users"></i> 我的小伙伴</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>风间彻：</strong> 我的好朋友，很聪明，但有点爱装大人。</li>
+                        <li class="list-group-item"><strong>樱田妮妮：</strong> 喜欢玩过家家，生气时会打兔子布偶。</li>
+                        <li class="list-group-item"><strong>佐藤正男：</strong> 胆子有点小，但很善良。</li>
+                        <li class="list-group-item"><strong>阿呆：</strong> 喜欢收集石头，说话慢慢的。</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <img src="幼稚园.png" alt="幼稚园的朋友们" class="img-fluid rounded">
+                </div>
+            </div>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section id="hobbies" class="mb-5">
+            <h2 class="section-title"><i class="fas fa-heart"></i> 兴趣爱好</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-masks-theater fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">动感超人</h5>
+                            <p class="card-text">我最爱的英雄！每天都会收看动感超人的节目！</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-cookie-bite fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">零食</h5>
+                            <p class="card-text">特别喜欢巧克比和小饼干，尤其是点心时间！</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-female fa-3x text-warning mb-3"></i>
+                            <h5 class="card-title">大姐姐</h5>
+                            <p class="card-text">嘿嘿，看到漂亮的大姐姐就会忍不住搭讪！</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section class="mb-5">
+            <h2 class="section-title"><i class="fas fa-history"></i> 我的成长时间线</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h5>1990年</h5>
+                    <p>我在漫画里诞生啦！</p>
+                </div>
+                <div class="timeline-item">
+                    <h5>1992年</h5>
+                    <p>我的动画开始在电视上播出！</p>
+                </div>
+                <div class="timeline-item">
+                    <h5>1993年</h5>
+                    <p>我们家迎来了新成员——小白！</p>
+                </div>
+                <div class="timeline-item">
+                    <h5>1996年</h5>
+                    <p>我的妹妹小葵出生啦！</p>
+                </div>
+            </div>
+        </section>
+
+<!-- Gallery Section -->
+        <section id="gallery" class="mb-5">
+            <h2 class="section-title"><i class="fas fa-images"></i> 我的精彩瞬间</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <img src="动感超人.jpg" class="img-fluid rounded" alt="照片1">
+                </div>
+                <div class="col-md-4">
+                    <img src="小熊饼干.jpg" class="img-fluid rounded" alt="照片2">
+                </div>
+                <div class="col-md-4">
+                    <img src="娜娜子.jpg" class="img-fluid rounded" alt="照片3">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="mb-5">
+            <h2 class="section-title"><i class="fas fa-envelope"></i> 联系我</h2>
+            <p>如果你也喜欢我，欢迎给我写信哦！</p>
+            <a href="https://baike.baidu.com/item/蜡笔小新/29538" target="_blank" class="btn btn-custom btn-lg">
+                <i class="fas fa-heart"></i> 点击了解更多！
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <p>&copy; 2025 野原新之助的个人主页 | 执行制作：臼井仪人工作室</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
